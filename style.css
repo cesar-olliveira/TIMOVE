@@ -14,12 +14,12 @@ body {
 
 .container {
   margin: 0%;
-  min-height: 100vh;
+  min-height:100vh;
   max-height: 900px;
   display: flex;
   background: url(./img/banner2.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   flex-direction: column;
@@ -55,6 +55,7 @@ body {
   background-position: center top;
   color: white;
   position: relative;
+  
 
 }
 
@@ -65,27 +66,28 @@ body {
   border-radius: 0px 20px 20px 0px;
   margin-left: 30px;
   text-align: center;
+  padding: 2%;
 }
 
 .banners p:nth-child(2) {
   animation: appear 3s;
   line-height: 60px;
   box-shadow: 20px 20px 50px #0d8dad;
-  justify-content: space-between;
+  
 }
 
 .banners p:nth-child(3) {
   animation: appear 4s;
   line-height: 60px;
   box-shadow: 20px 20px 50px #0d8dad;
-
+  
 }
 
 .banners p:nth-child(4) {
   animation: appear 5s;
   line-height: 60px;
   box-shadow: 20px 20px 50px #0d8dad;
-
+  
 }
 
 .banners p:nth-child(5) {
@@ -386,6 +388,87 @@ h4:hover {
   animation: snowy 9s linear infinite;
 }
 
+/* DIV container Bem- vindos */
+
+.container-welcome
+{
+	display: flex;
+	position: relative;		 
+	justify-content: space-between;
+	min-height: 100vh;
+	min-width: 100wh;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+
+}
+.icon{
+	width: 50%;
+	text-align: center;
+	
+}
+.icon svg {
+	
+	justify-content: center;
+	position: relative;
+	
+}
+
+.box-text{
+	width: 40%;
+	margin:50px;
+	text-align: justify;
+	padding: 30px;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+	background-color: #101C5F;
+	color: white;
+  font-family: 'latin';
+	
+}
+.container-welcome .icon path {
+	fill = transparent; 
+	stroke-width= 10px; 
+	stroke: #001489; 
+
+}
+.container-welcome .icon path {
+	stroke-dasharray: 1560;
+	stroke-dashoffset: 0;
+	animation: animate-path 7s;
+	transition: fill-opacity 1200ms linear 0s, stroke-opacity 1200ms 0s;
+	animation-iteration-count: infinite;
+	
+}
+
+@keyframes animate-path
+{
+	0%
+	{
+		stroke-dashoffset: 0;
+		fill: transparent;
+	}
+	40%
+	{
+		stroke-dashoffset: 1560;
+		
+	}
+	80%
+	{
+		stroke-dashoffset: 3120;
+		fill: transparent;
+	}
+	100%
+	{
+		stroke-dashoffset: 3120;
+		fill: #001489; 
+		
+	}
+
+}
+
+/* FIM da DIV container Bem-vindos */
+
+
 @-moz-keyframes snowy {
   0% {
     background-position: 0px 0px, 0px 0px, 0px 0px;
@@ -471,14 +554,9 @@ h4:hover {
   .container {
     margin: 0%;
     min-height: 100vh;
-    max-height: 900px;
     display: flex;
     background: url(./img/banner2-mobile.jpg);
     background-repeat: no-repeat;
-
-    background-size: 100%;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
     flex-direction: column;
   }
 
@@ -489,6 +567,7 @@ h4:hover {
     border-radius: 0px 20px 20px 0px;
     margin-left: 10px;
     text-align: center;
+    position: relative;
   }
   .banners {
     width: 50%;
@@ -496,11 +575,10 @@ h4:hover {
     font-size: 20px;
     padding: 10px;
     flex-wrap: wrap;
-    height: 100vh;
+    min-height: 100vh;
     background-size: cover;
     background-position: center top;
     color: white;
-    position: relative;
       
   }
 
