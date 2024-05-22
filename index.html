@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="Home">
       <div class="navbar">
         <div class="page-wrapper">
           <h4>TIMOVE</h4>
@@ -21,7 +21,7 @@
 
         <nav>
           <ul id="menu-list">
-            <li><a class="nav-link">Home</a></li>
+            <li><a class="nav-link" href="#Home">Home</a></li>
             <li><a class="nav-link" href="#Sobre">Sobre</a></li>
             <li><a class="nav-link" href="#Servicos">Serviços</a></li>
             <li><a class="nav-link" href="#Contato">Contato</a></li>
@@ -266,7 +266,7 @@
           <label class="custom-control-label" for="customCheck3">Redes</label>
           
           <input type="checkbox" name="checkbox4" class="custom-control-input" id="customCheck4">
-          <label class="custom-control-label" for="customCheck4">Cloud e Automação</label>
+          <label class="custom-control-label" for="customCheck4">Cloud</label>
         
           </div>
      
@@ -330,9 +330,39 @@
       </div>
       </div>
   <div>
-      <h2>teste</h2>
+    <button id="backToTopBtn" onclick="scrollToTop()">
+      <img src="img/arrow_circle_up.png" alt="Voltar ao Topo">
+    </button>
+      
   </div>
-
-    <script src="script.js"></script>
+  <footer>
+    <div class="footer-container">
+        <div class="footer-links">
+            <a href="#Home">Início</a> 
+            <a href="#Servicos">Serviços</a> 
+            <a href="#Contato">Contato</a>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="img/instagram-icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="img/linkedin-icon.png" alt="LinkedIn">
+            </a>
+      <a href="https://web.telegram.org" target="_blank">
+                <img src="img/telegram-icon.png" alt="Telegram">
+            </a>
+        </div>
+        <div class="footer-contact">
+            <p>Email:<a href="mailto:contato@timove.com.br">contato@timove.com.br</a></p>
+    <p>Telefone: (11)90000-0000 </p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>Desenvolvido por | TIMOVE 2024</p>
+    </div>
+</footer>
+  <script src="script.js"></script>
+  
   </body>
 </html>
