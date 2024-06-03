@@ -13,24 +13,24 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container" id="Home">
+    <div class="container" id="Inicio">
       <div class="navbar">
         <div class="page-wrapper">
           <h4>TIMOVE</h4>
         </div>
 
         <nav>
-          <ul id="menu-list">
-            <li><a class="nav-link" href="#Home">Home</a></li>
+          <ul class="nav-list"> 
+            <li><a class="nav-link" href="#Inicio">Inicio</a></li>
             <li><a class="nav-link" href="#Sobre">Sobre</a></li>
             <li><a class="nav-link" href="#Servicos">Serviços</a></li>
             <li><a class="nav-link" href="#Contato">Contato</a></li>
-            <li><a class="nav-link">A definir</a></li>
+            <li><a class="nav-link" href="#Clientes">Clientes</a></li>
           </ul>
         </nav>
-        <img src="img/icon-menu.png" alt="icone-menu" class="icone-menu">
+        <img src="img/icon-menu.png" alt="icone-menu" class="icone-menu" onclick="menuShow()">
+        <img src="img/icon-close.png" alt="icone-close" class="close-btn" onclick="menuShow()">
       </div>
-
       <div class="row">
         <div class="banners">
           
@@ -329,16 +329,50 @@
         </div>
       </div>
       </div>
+  		<div class="container-depoimentos" id="Clientes">
+        <figure class="snip1157">
+          <blockquote> Desde que fundei a Maestro tenho como meu principal fornecedor a TIMOVE. Sendo um atendimento de excelencia e extremamente profissional. 
+          <div class="arrow"></div>
+          </blockquote>
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample3.jpg" alt="sq-sample3" />
+          <div class="author">
+          <h5>Gustavo Freire<span> MaestroLogistics</span></h5>
+          </div>
+        </figure>
+        <figure class="snip1157 hover">
+          <blockquote> A pouco mais de 1 ano recebi a indicação da equipe TIMOVE para alguns serviços de TI, desde então, toda demanda ou novo projeto tenho centralizado neles
+          <div class="arrow"></div>
+          </blockquote>
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample27.jpg" alt="sq-sample27" />
+          <div class="author">
+          <h5>Fernanda Teles<span> Seashellogistics</span></h5>
+          </div>
+        </figure>
+        <figure class="snip1157">
+          <blockquote> « Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+          <div class="arrow"></div>
+          </blockquote>
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample17.jpg" alt="sq-sample17" />
+          <div class="author">
+          <h5>Nome / Sobrenome <span> Empresa</span></h5>
+          </div>
+        </figure>
+      
+      </div>    
   <div>
     <button id="backToTopBtn" onclick="scrollToTop()">
       <img src="img/arrow_circle_up.png" alt="Voltar ao Topo">
     </button>
+
+    <a href="https://api.whatsapp.com/send?phone=5511932314627" target="_blank" >
+		  <img src="img/whatsapp-button-icon.png" alt="WhatsApp" class="whatsapp-button">
+		</a>
       
   </div>
   <footer>
     <div class="footer-container">
         <div class="footer-links">
-            <a href="#Home">Início</a> 
+            <a href="#Inicio">Início</a> 
             <a href="#Servicos">Serviços</a> 
             <a href="#Contato">Contato</a>
         </div>
@@ -355,7 +389,7 @@
         </div>
         <div class="footer-contact">
             <p>Email:<a href="mailto:contato@timove.com.br">contato@timove.com.br</a></p>
-    <p>Telefone: (11)90000-0000 </p>
+
         </div>
     </div>
     <div class="footer-bottom">
