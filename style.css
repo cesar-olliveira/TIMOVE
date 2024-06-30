@@ -476,7 +476,7 @@ h4:hover {
 }	
 	
 .box-text:before {
-    --angle: 200deg;
+    --angle: 80deg;
     border-width: 2px
 }	
 
@@ -2155,6 +2155,38 @@ textarea:valid {
 }
 
 /* Fim Container Contato */
+
+/* Agradecimento */
+
+.container-agradecimento {
+    text-decoration: none;
+    background: #000000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.btn-agradecimento {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.btn-agradecimento:hover {
+    background-color: #ddd;
+}
+
+
 
 /* Inicio Container Clientes */
 

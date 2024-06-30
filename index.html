@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Protest+Riot&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>TIMOVE</title>
+    <title>TIMOVE - A Tecnologia que te move</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -231,52 +231,56 @@
   <div class="container-contato" id="Contato">
     <br><h2 class="titulo-form">Solicite o seu Orçamento</h2> 
    
-         <form class="form" action="https://formsubmit.co/cesarolliveira25@gmail.com" method="POST">
+         <form class="form" action="https://api.staticforms.xyz/submit" method="POST">
         
          <div class="input-group">
          
-             <input type="text" name="nome" class="input"  autocomplete="off" required>
+             <input type="text" name="name" class="input" autocomplete="off" required>
              <label class="user-label">Nome</label>
          
          </div>
      
          <div class="input-group">
          
-             <input type="text" name="empresa" class="input"  autocomplete="off" required>
+             <input type="text" name="subject" class="input" autocomplete="off" required>
              <label class="user-label">Empresa</label>
          
          </div>
      
          <div class="input-group">
          
-             <input type="text" name="email" class="input"  autocomplete="off" required>
+             <input type="text" name="email" class="input" autocomplete="off" required>
              <label class="user-label">E-mail</label>
          
         </div>
  
      
         <div class="custom-control-custom-checkbox">
-          <input type="checkbox" name="checkbox1" class="custom-control-input" id="customCheck1">
+          <input type="checkbox" name="subject" class="custom-control-input" id="customCheck1">
           <label class="custom-control-label" for="customCheck1">Hardware</label>
         
-          <input type="checkbox" name="checkbox2" class="custom-control-input" id="customCheck2">
+          <input type="checkbox" name="$checkout" class="custom-control-input" id="customCheck2">
           <label class="custom-control-label" for="customCheck2">Software</label>
         
-          <input type="checkbox" name="checkbox3" class="custom-control-input" id="customCheck3">
+          <input type="checkbox" name="subject" class="custom-control-input" id="customCheck3">
           <label class="custom-control-label" for="customCheck3">Redes</label>
           
-          <input type="checkbox" name="checkbox4" class="custom-control-input" id="customCheck4">
+          <input type="checkbox" name="subject" class="custom-control-input" id="customCheck4">
           <label class="custom-control-label" for="customCheck4">Cloud</label>
         
           </div>
      
          <div class="input-group">
           
-             <textarea type="text" class="textarea" name="mensagem" rows="4" autocomplete="off" required=""></textarea>
+             <textarea type="text" class="textarea" name="message" rows="4" autocomplete="off" required=""></textarea>
              <label class="user-label">Mensagem</label>
          
          </div>
-         <button class="btn-gradient">Enviar</button>
+         <button type="submit" class="btn-gradient">Enviar</button>
+
+         <input type="hidden" name="accessKey" value="3718a57c-1472-4f63-a00f-3c6e29890ab6">
+         <input type="hidden" name="redirectTo" value="https://cesar-olliveira.github.io/TIMOVE/agradecimento.html">
+         <input type="hidden" name="_subject" value="Contato Site" >
      </form>
    </div>
    
@@ -393,7 +397,7 @@
         </div>
     </div>
     <div class="footer-bottom">
-        <p>Desenvolvido por | TIMOVE 2024</p>
+        <p>Desenvolvido por | © TIMOVE 2024</p>
     </div>
 </footer>
   <script src="script.js"></script>
