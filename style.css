@@ -2159,7 +2159,6 @@ textarea:valid {
 /* Agradecimento */
 
 .container-agradecimento {
-    text-decoration: none;
     background: #000000;
     color: #fff;
     display: flex;
@@ -2173,6 +2172,7 @@ textarea:valid {
 }
 
 .btn-agradecimento {
+    text-decoration: none;
     background-color: #fff;
     color: #000;
     border: none;
