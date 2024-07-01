@@ -2160,7 +2160,7 @@ textarea:valid {
 
 .container-agradecimento {
     background: #000000;
-    color: #fff;
+    color: aqua;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2172,18 +2172,45 @@ textarea:valid {
 }
 
 .btn-agradecimento {
-    text-decoration: none;
-    background-color: #fff;
-    color: #000;
+    width: auto;
+    font-size: 1em;
+    margin: 15px;
+    padding: 12px 25px;
     border: none;
-    border-radius: 15px;
-    padding: 10px 20px;
-    font-size: 16px;
+    outline: none;
+    background: transparent;
+    color: aqua;
+    text-decoration: none;
+    position: relative;
+    z-index: 0;
     cursor: pointer;
-    margin-top: 20px;
 }
-.btn-agradecimento:hover {
-    background-color: #ddd;
+.btn-agradecimento::before {
+ 
+  position: absolute;
+  content: "";
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  left: -3px;
+  top: -3px;
+  background: linear-gradient(124deg, black, aqua );
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(0px);
+  animation: move 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.btn-agradecimento:hover::before { opacity: 1; }
+.btn-agradecimento::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #091c18;
+  left: 0;
+  top: 0;
 }
 
 
