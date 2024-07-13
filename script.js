@@ -58,5 +58,40 @@ function menuShow() {
       closeBtn.style.display = 'none';
     }
   });
-  
+
+
+
+  function formatPhoneNumber(event) {
+    let input = event.target;
+    let value = input.value.replace(/\D/g, '');
+
+    if (input.id === 'phone' && value.length > 10) {
+        value = value.slice(0, 10);
+    } else if (input.id === 'mobile' && value.length > 11) {
+        value = value.slice(0, 11);
+    }
+
+    if (input.id === 'phone') {
+        value = value.replace(/^(\d{2})(\d{4})(\d{4})$/, '($1) $2-$3');
+    } else if (input.id === 'mobile') {
+        value = value.replace(/^(\d{2})(\d{5})(\d{4})$/, '($1) $2-$3');
+    }
+
+    input.value = value;
+}
+
+document.getElementById('phone').addEventListener('input', formatPhoneNumber);
+document.getElementById('mobile').addEventListener('input', formatPhoneNumber);
+
+function validateForm() {
+    const email = document.getElementById('email').value;
+    const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+
+    if (!emailPattern.test(email)) {
+        alert('Por favor, insira um e-mail válido.');
+        return false;
+    }
+
+    return true;
+}
   
